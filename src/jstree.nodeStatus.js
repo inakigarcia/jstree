@@ -26,6 +26,7 @@
 					if(node.status === options.status[i].name) {
 						var tmp = img.cloneNode(true);
 						tmp.className = tmp.className + " " + options.status[i].icon;
+						tmp.style = "color: " + options.status[i].color + ";";
 	                    obj.insertBefore(tmp, obj.childNodes[2]);
 					}
 				}
